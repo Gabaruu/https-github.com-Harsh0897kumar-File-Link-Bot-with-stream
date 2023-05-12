@@ -110,7 +110,7 @@ async def private_receive_handler(c: Client, m: Message):
 
 <b>💌 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ :- </b> <i><b>{}</b></i>
 
-<b>🖥 ᴡᴀʏᴄʜ ᴏɴʟɪɴᴇ :- </b> <i><b>{}</b></i>
+<b>🖥 ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ :- </b> <i><b>{}</b></i>
 
 <b>♻️ ᴛʜɪs ʟɪɴᴋ ɪs ᴘᴇʀᴍᴀɴᴇɴᴛ ᴀɴᴅ ᴡᴏɴ'ᴛ ɢᴇᴛs ᴇxᴘɪʀᴇᴅ ♻️\n\n@Movie_Factory1</b>"""
 
@@ -134,7 +134,7 @@ async def channel_receive_handler(bot, broadcast):
     if MY_PASS:
         check_pass = await pass_db.get_user_pass(broadcast.chat.id)
         if check_pass == None:
-            await broadcast.reply_text("Login first using /login cmd \n don\'t know the pass? request it from @kwicadmin")
+            await broadcast.reply_text("Login first using /login cmd \n don\'t know the pass? request it from @MovieBhauBot")
             return
         if check_pass != MY_PASS:
             await broadcast.reply_text("Wrong password, login again")
